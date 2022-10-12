@@ -1,5 +1,5 @@
 # Recipe_App
-Recipe_App is an assistant in the kitchen that makes cooking easier, faster and more convenient.
+Recipe_App is an assistant in the kitchen that makes cooking easier, healthier, faster and more convenient.
 
 Modern tools used : Kotlin, MVVM architecture, API, Room Database, Data (View) Binding, Navigation Component, Live Data, Flow, Coroutines.
 
