@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="be.bf.android.recetteapp.ui.fragments.LogInRegisterFragments.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="be.bf.android.recetteapp.ui.fragments.LogInRegisterFragments.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="be.bf.android.recetteapp.ui.fragments.NavFragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_searchBarFragment"
+            app:destination="@id/searchBarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favorisFragment"
+        android:name="be.bf.android.recetteapp.ui.fragments.NavFragments.FavorisFragment"
+        android:label="Favourites"
+        tools:layout="@layout/fragment_favoris" >
+        <action
+            android:id="@+id/action_favorisFragment_to_myIngredientsFragment"
+            app:destination="@id/myIngredientsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="be.bf.android.recetteapp.ui.fragments.NavFragments.CategoryFragment"
+        android:label="Categories"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/searchBarFragment"
+        android:name="be.bf.android.recetteapp.ui.fragments.SearchBarFragment"
+        android:label="fragment_search_bar"
+        tools:layout="@layout/fragment_search_bar" />
+    <fragment
+        android:id="@+id/myIngredientsFragment"
+        android:name="be.bf.android.recetteapp.ui.fragments.NavFragments.MyIngredientsFragment"
+        android:label="Ingredients"
+        tools:layout="@layout/fragment_my_ingredients" />
+</navigation>

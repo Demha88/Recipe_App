@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:icon="@drawable/ic_home"
+        android:id="@+id/homeFragment"/>
+
+    <item android:title="Category"
+        android:icon="@drawable/ic_category"
+        android:id="@+id/categoryFragment"/>
+
+    <item android:title="Favorites"
+        android:icon="@drawable/ic_favoris"
+        android:id="@+id/favorisFragment"/>
+
+<!--    <item android:title="ToDoList"-->
+<!--        android:icon="@drawable/ic_todolist"-->
+<!--        android:id="@+id/myIngredientsFragment" />-->
+
+
+
+</menu>

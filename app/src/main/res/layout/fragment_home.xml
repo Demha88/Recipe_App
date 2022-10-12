@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.NavFragments.HomeFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginTop="15dp">
+
+
+
+                <TextView
+                    android:id="@+id/search_view"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_bg"
+                    android:text="Search..."
+                    android:paddingStart="15dp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingEnd="15dp"
+                     />
+
+                <!--                <ImageView-->
+<!--                    android:id="@+id/search_text"-->
+<!--                    android:layout_width="22dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="bottom|center"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/ic_search" />-->
+
+                <!--                <ImageView-->
+<!--                    android:id="@+id/search_img_forward"-->
+<!--                    android:layout_width="@dimen/_35sdp"-->
+<!--                    android:layout_height="@dimen/_35sdp"-->
+<!--                    app:tint="@color/light_grey"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/ic_arrow_forward" />-->
+
+            </LinearLayout>
+
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/linear_header"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_30ssp"-->
+<!--                android:layout_marginTop="@dimen/_10ssp"-->
+<!--                android:layout_marginEnd="@dimen/_20ssp"-->
+<!--                android:orientation="horizontal"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--&lt;!&ndash;                <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/mealD_card"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="@dimen/_40sdp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:cardCornerRadius="@dimen/_18sdp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:cardUseCompatPadding="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:cardBackgroundColor="@color/light_grey"&ndash;&gt;-->
+<!--&lt;!&ndash;                    >&ndash;&gt;-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/search_view"-->
+<!--                    android:layout_width="32dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="bottom|center"-->
+<!--                    android:layout_marginStart="230dp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/ic_search" />-->
+
+
+<!--                    &lt;!&ndash;                    <SearchView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/search_view"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginHorizontal="16dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                       />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/fr_home"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_weight="3"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="@dimen/_20ssp" />&ndash;&gt;-->
+
+<!--                &lt;!&ndash;    <ImageView&ndash;&gt;-->
+<!--                &lt;!&ndash;        android:id="@+id/img_search"&ndash;&gt;-->
+<!--                &lt;!&ndash;        android:layout_width="@dimen/_30ssp"&ndash;&gt;-->
+<!--                &lt;!&ndash;        android:layout_height="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;        android:scaleType="centerCrop"&ndash;&gt;-->
+<!--                &lt;!&ndash;        android:src="@drawable/ic_search" />&ndash;&gt;-->
+
+<!--            </LinearLayout>-->
+
+            <TextView
+                android:id="@+id/categ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:text="Meals of the Day"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/linear_header"
+                app:layout_constraintTop_toBottomOf="@id/linear_header" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/meal_card"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/categ">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:id="@+id/imageSlider"
+                        app:iss_auto_cycle="true"
+                        app:iss_delay="0"
+                        app:iss_placeholder="@android:color/darker_gray"
+                        app:iss_error_image="@android:color/darker_gray"
+                        app:iss_corner_radius="5"
+                        app:iss_selected_dot="@drawable/default_selected_dot"
+                        app:iss_unselected_dot="@drawable/default_unselected_dot"
+                        app:iss_period="2000"
+                        tools:ignore="MissingConstraints" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/random_meal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/dish_name"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:maxLines="2"-->
+<!--                        android:text="Dish Name"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:background="@color/light_blue"-->
+<!--                        android:textSize="@dimen/_13ssp"-->
+<!--                        android:paddingLeft="5dp"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintHorizontal_bias="0.0"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent"-->
+<!--                        app:layout_constraintVertical_bias="1.0" />-->
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/text_popular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Vegetarien recipes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/categ"
+                app:layout_constraintTop_toBottomOf="@id/meal_card" />
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/popular_recycler"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="@dimen/_130sdp"-->
+<!--                android:layout_marginStart="@dimen/_25sdp"-->
+<!--                android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/text_popular" />-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/popular_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_popular" />
+
+            <TextView
+                android:id="@+id/text_categ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="  Highest rated recipes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/popular_recycler"
+                app:layout_constraintTop_toBottomOf="@id/popular_recycler" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/allmeal_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_categ" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.SearchBarFragment">
+
+<LinearLayout
+    android:id="@+id/linear_header"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:orientation="horizontal"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="5dp">
+
+    <EditText
+        android:id="@+id/search_text"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_weight="1"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:hint="Search..."
+        android:background="@drawable/search_bg"/>
+
+    <ImageView
+        android:id="@+id/search_img_forward"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        app:tint="@color/light_grey"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_arrow_forward" />
+
+</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_recycler"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_header" />
+
+    <!--    <LinearLayout-->
+<!--        android:id="@+id/linear_header"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_marginTop="@dimen/_5ssp"-->
+<!--        android:layout_marginEnd="@dimen/_5sdp"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/search_card"-->
+<!--            android:layout_width="360dp"-->
+<!--            android:layout_height="@dimen/_45sdp"-->
+<!--            android:layout_gravity="center"-->
+<!--            app:cardBackgroundColor="@color/light_grey"-->
+<!--            app:cardCornerRadius="@dimen/_9sdp"-->
+<!--            app:cardUseCompatPadding="true"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/search_text"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="@dimen/_45sdp"-->
+<!--                android:layout_weight="@integer/material_motion_duration_medium_1"-->
+<!--                android:paddingStart="@dimen/_15sdp"-->
+<!--                android:paddingEnd="@dimen/_15sdp"-->
+<!--                android:hint="Search..." />-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/search_arrow"-->
+<!--            android:layout_width="@dimen/_35sdp"-->
+<!--            android:layout_height="@dimen/_35sdp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:src="@drawable/ic_arrow_forward"-->
+<!--            app:tint="@color/light_grey" />-->
+
+<!--    </LinearLayout>-->
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/search_recycler"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginStart="5dp"-->
+<!--        android:layout_marginEnd="5dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/linear_header" />-->
+
+<!--    &lt;!&ndash;    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:orientation="horizontal" >&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <EditText&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/search_text"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="@integer/material_motion_duration_medium_1"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:paddingStart="@dimen/_15sdp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:paddingEnd="@dimen/_15sdp"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        &ndash;&gt;-->
+<!--&lt;!&ndash;    </LinearLayout>&ndash;&gt;-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
